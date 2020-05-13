@@ -123,9 +123,9 @@ chmod +x /usr/bin/cfssl /usr/bin/cfssljson /usr/bin/cfssl-certinfo
 mkdir -p /opt/ssl/csr
 ```
 
-{% hint style="info" %} etcd各节点都要执行 {% endhint %}
-
-### 
+{% hint style="info" %}
+etcd各节点都要执行
+{% endhint %}
 
 ## 四、部署etcd
 
