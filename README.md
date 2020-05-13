@@ -1,12 +1,54 @@
-# 文档目录
+---
+description: 目录结构
+---
+
+# kubernetes 1.18.0 集群部署
 
 ## 一、环境信息
 
 ### 1、组件版本
 
-### 2、集群环境规划
+操作系统: CentOS Linux release 7.8.2003 \(Core\) 最小化安装 
+
+Kubernetes: 1.18.0 
+
+Docker: Docker version 19.03.8, build afacb8b 
+
+Etcd: v3.4.7 
+
+cni: v0.8.5 
+
+Flanneld: v0.12.0-amd64 
+
+Cfssl: Version: 1.2.0 
+
+Harbor: v1.10.2
+
+### 2、集群网络规划
+
+host-net : 192.168.0.0/16 
+
+svc-net : 172.30.1.0/24
+
+pod-net : 10.1.0.0/16 
 
 ### 3、节点规划
+
+master1/etcd1
+
+master2/etcd2
+
+master3/etcd3
+
+node1
+
+node2
+
+node3
+
+### 4、集群逻辑图
+
+![k8s&#x96C6;&#x7FA4;&#x903B;&#x8F91;&#x56FE;](.gitbook/assets/jie-ping-20200514-shang-wu-12.56.56.png)
 
 ## 二、系统初始化
 
@@ -38,7 +80,30 @@
 
 ### 1、安装cfssl
 
+#### 1.1下载cfssl
+
+```bash
+curl -L 
+https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
+ -o /usr/bin/cfssl
+curl -L 
+https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
+ -o /usr/bin/cfssljson
+curl -L 
+https://pkg.cfssl.org/R1.2/cfssl-certinfo_linux-amd64
+ -o /usr/bin/cfssl-certinfo
+chmod +x /usr/bin/cfssl /usr/bin/cfssljson /usr/bin/cfssl-certinfo
+```
+
 ### 2、创建ca证书&秘钥
+
+```bash
+mkdir -p /opt/ssl/csr
+```
+
+{% hint style="info" %}
+etcd各节点都要执行
+{% endhint %}
 
 ## 四、部署etcd
 
