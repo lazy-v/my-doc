@@ -7,4 +7,6 @@
   * [centos7 docker安装](docker/centos7-docker-install.md)
   * [docker阿里云镜像加速配置](docker/docker-daemon.json.md)
 * [ELK](elk.md)
+* [ESXI](esxi.md)
+* [VMware vSphere 6序列号大全](vmware-vsphere-6-xu-lie-hao-da-quan.md)
 
