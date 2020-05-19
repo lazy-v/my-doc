@@ -9,6 +9,9 @@
 * [ELK](elk.md)
 * [ESXI](esxi/README.md)
   * [VMware vSphere 6序列号大全](esxi/vmware-vsphere-6-xu-lie-hao-da-quan.md)
-* [JDK](jdk.md)
-* [JDK1.8.0\_231](jdk1.8.0_231.md)
+* [JDK](jdk/README.md)
+  * [JDK1.8.0\_231](jdk/jdk1.8.0_231.md)
+* [Zookeeper](zookeeper/README.md)
+  * [Install](zookeeper/install.md)
+* [NamedManager\_Deploy](namedmanager_deploy.md)
 
