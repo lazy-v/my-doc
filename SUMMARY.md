@@ -13,5 +13,6 @@
   * [JDK1.8.0\_231](jdk/jdk1.8.0_231.md)
 * [Zookeeper](zookeeper/README.md)
   * [Install](zookeeper/install.md)
-* [NamedManager\_Deploy](namedmanager_deploy.md)
+* [DNS](namedmanager_deploy/README.md)
+  * [BIND9](namedmanager_deploy/bind9.md)
 
